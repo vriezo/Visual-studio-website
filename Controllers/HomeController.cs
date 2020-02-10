@@ -21,11 +21,31 @@ namespace SchoolTemplate.Controllers
 
       return View(products);
     } 
-
+    [Route("Show-All")]
     public IActionResult ShowAll()
-        {
-            return View();
-        }
+    {
+        return View();
+    }
+    [Route("Privacy")]
+    public IActionResult Privacy()
+    {
+      return View();
+    }
+    [Route("Transport")]
+    public IActionResult Transport()
+    {
+      return View();
+    }
+    [Route("Contact")]
+    public IActionResult Contact()
+    {
+       return View();
+    }
+    [Route("Huisregels")]
+    public IActionResult Huisregels()
+    {
+       return View();
+    }
 
     private List<Product> GetProducts()
     {
@@ -56,13 +76,7 @@ namespace SchoolTemplate.Controllers
 
       return products;
     }
-
-    public IActionResult Privacy()
-    {
-      return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
       return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
