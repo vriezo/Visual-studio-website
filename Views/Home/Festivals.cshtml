@@ -1,0 +1,19 @@
+﻿@using SchoolTemplate.Database;
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+<br />
+<table>
+    <tr>
+        <th>Naam</th>
+        <th>Plaats</th>
+        <th>Beschrijving</th>
+    </tr>
+    <tr>
+        <td>@Model.Naam</td>
+        <td>@Model.Plaats</td>
+        <td>@Model.Beschrijving</td>
+    </tr>
+</table>

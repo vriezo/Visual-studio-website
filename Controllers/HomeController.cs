@@ -15,11 +15,7 @@ namespace SchoolTemplate.Controllers
 
     public IActionResult Index()
     {
-      List<Product> products = new List<Product>();
-      // uncomment deze regel om producten uit je database toe te voegen
-      products = GetProducts();
-
-      return View(products);
+      return View();
     } 
     [Route("Show-All")]
     public IActionResult ShowAll()
@@ -46,36 +42,40 @@ namespace SchoolTemplate.Controllers
     {
        return View();
     }
-
-    private List<Product> GetProducts()
-    {
-      List<Product> products = new List<Product>();
-
-      using (MySqlConnection conn = new MySqlConnection(connectionString))
-      {
-        conn.Open();
-        MySqlCommand cmd = new MySqlCommand("select * from product", conn);
-
-        using (var reader = cmd.ExecuteReader())
+    [Route("festivals/{id}")]
+    public IActionResult Festivals(string id)
         {
-          while (reader.Read())
-          {
-            Product p = new Product
-            {
-              Id = Convert.ToInt32(reader["Id"]),
-              Naam = reader["Naam"].ToString(),
-              Calorieen = float.Parse(reader["calorieen"].ToString()),
-              Formaat = reader["Formaat"].ToString(),
-              Gewicht = Convert.ToInt32(reader["Gewicht"].ToString()),
-              Prijs = Decimal.Parse(reader["Prijs"].ToString())
-            };
-            products.Add(p);
-          }
+            ViewData["festival_id"] = id;
+            Festival festival = GetFestival(id);
+            return View(festival);
         }
-      }
 
-      return products;
-    }
+    private Festival GetFestival(string id)
+        {
+            List<Festival> festivals = new List<Festival>();
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("select * from festivals where id = " + id + ";", conn);
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Festival festival = new Festival
+                        {
+                            Id = Convert.ToInt32(reader["id"]),
+                            Naam = reader["Naam"].ToString(),
+                            Prijs = Decimal.Parse(reader["prijs"].ToString()),
+                            Plaats = reader["Plaats"].ToString(),
+                            Beschrijving = reader["Beschrijving"].ToString()
+                        };
+                        festivals.Add(festival);
+                    }
+                }
+            }
+            return festivals[0];
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
