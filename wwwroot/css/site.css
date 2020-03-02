@@ -29,6 +29,22 @@ html {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
+.festivals .festival {
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.festival .festival-titel {
+    margin-bottom: 10px;
+}
+
 button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
