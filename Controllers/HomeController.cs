@@ -45,6 +45,7 @@ namespace SchoolTemplate.Controllers
     }
     [Route("festivals/{id}")]
     public IActionResult Festivals(string id)
+     
         {
             ViewData["festival_id"] = id;
             Festival festival = GetFestival(id);
