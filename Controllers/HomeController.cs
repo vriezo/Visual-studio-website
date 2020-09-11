@@ -42,12 +42,10 @@ namespace SchoolTemplate.Controllers
     }
     [Route("contact")]
     [HttpPost]
-    public IActionResult contact(string voornaam, string achternaam)
+    public IActionResult contact(PersonModel model)
         {
-            ViewData["voornaam"] = voornaam;
-            ViewData["achternaam"] = achternaam;
-
-            return View();
+           
+            return View(model);
     }
     [Route("Huisregels")]
     public IActionResult Huisregels()
