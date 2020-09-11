@@ -28,6 +28,7 @@ namespace SchoolTemplate.Controllers
     {
       return View();
     }
+
     [Route("Transport")]
     public IActionResult Transport()
     {
@@ -37,6 +38,15 @@ namespace SchoolTemplate.Controllers
     public IActionResult Contact()
     {
        return View();
+    }
+    [Route("contact")]
+    [HttpPost]
+    public IActionResult contact(string voornaam, string achternaam)
+        {
+            ViewData["voornaam"] = voornaam;
+            ViewData["achternaam"] = achternaam;
+
+            return View();
     }
     [Route("Huisregels")]
     public IActionResult Huisregels()
