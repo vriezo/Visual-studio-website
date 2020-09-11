@@ -1,10 +1,4 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Contact</title>
-</head>
-<body>
+﻿@model PersonModel 
 
 
 @{ 
@@ -22,10 +16,8 @@
     @Html.ValidationMessageFor(m => m.Email) <br />
     <input type="submit" value="verstuur" />
 </form>
-
+   
 <p>
     Je voornaam is: @ViewData["voornaam"] <br />
     Je achternaam is: @ViewData["achternaam"] <br />
 </p>
-</body>
-</html>
