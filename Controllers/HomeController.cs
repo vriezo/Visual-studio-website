@@ -26,7 +26,8 @@ namespace SchoolTemplate.Controllers
     [Route("Privacy")]
     public IActionResult Privacy()
     {
-      return View();
+
+            return View();
     }
 
     [Route("Transport")]
