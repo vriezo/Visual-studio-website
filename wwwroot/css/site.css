@@ -60,7 +60,8 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  bachground-color: lightblue;
+  background-color: cornflowerblue;
+  
 }
 .footer {
   position: absolute;
@@ -73,5 +74,11 @@ body {
 }
 
 .nav-bar {
-    background-image: url("/img/festivalsimg3.jpg")
+    background-image: url("/img/festivalsimg3.jpg");
+    height: 250px;
+    background-position-x: center;
+    background-position-y: center;
+    margin-left:65px;
+    margin-right: 65px;
+    margin-top: 20px;
 }
