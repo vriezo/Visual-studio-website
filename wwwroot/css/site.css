@@ -58,9 +58,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  bachground-color: lightblue;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+
 }
 .footer {
   position: absolute;
@@ -73,11 +73,27 @@ body {
 }
 
 .nav-bar {
-    background-image: url("/img/festivalsimg3.jpg");
-    height: 250px;
-    background-position-x: center;
-    background-position-y: center;
-    margin-left:65px;
-    margin-right: 65px;
-    margin-top: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
+a {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+li a:hover {
+    background-color: darkblue;
+}
+    
+    
