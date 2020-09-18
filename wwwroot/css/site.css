@@ -10,7 +10,7 @@ a.navbar-brand {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+  font-size: 14px; 
 }
 @media (min-width: 768px) {
   html {
@@ -60,7 +60,7 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-image: url("/img/imgblack.jpg");
+    
 }
 .footer {
   position: absolute;
@@ -73,11 +73,18 @@ body {
 }
 
 .nav-bar {
-    background-image: url("/img/festivalsimg3.jpg");
-    height: 250px;
-    background-position-x: center;
-    background-position-y: center;
-    margin-left:65px;
-    margin-right: 65px;
-    margin-top: 20px;
+    overflow: hidden;
+    background-color: #333;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 30px;
+   
+     
 }
