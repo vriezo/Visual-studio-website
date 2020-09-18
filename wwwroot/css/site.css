@@ -58,9 +58,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  bachground-color: lightblue;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url("/img/imgblack.jpg");
 }
 .footer {
   position: absolute;
