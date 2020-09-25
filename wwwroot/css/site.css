@@ -60,6 +60,7 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
+    
 
 }
 .footer {
@@ -92,8 +93,15 @@ li a {
     transition: all 0.2s;
 }
 
+.headerimage {
+    background-image: url("/img/imgblack.jpg");
+    width: 100%;
+    height: 70px;
+    margin-top: 50px;
+    background-size: cover;
+}
+
 li a:hover {
     background-color: darkblue;
 }
-    
-    
+
