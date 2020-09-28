@@ -15,7 +15,9 @@ namespace SchoolTemplate.Database
 
     public string Plaats { get; set; }
 
-    public string Beschrijving { get; set; }
+    public string Beschrijving { get; set; } 
+
+    public string Img { get; set; }
 
   }
 }

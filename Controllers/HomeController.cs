@@ -79,7 +79,9 @@ namespace SchoolTemplate.Controllers
                             Naam = reader["Naam"].ToString(),
                             Prijs = Decimal.Parse(reader["prijs"].ToString()),
                             Plaats = reader["Plaats"].ToString(),
-                            Beschrijving = reader["Beschrijving"].ToString()
+                            Beschrijving = reader["Beschrijving"].ToString(),
+                            Img = reader["Img"].ToString()
+                            
                         };
                         festivals.Add(festival);
                     }
@@ -105,7 +107,8 @@ namespace SchoolTemplate.Controllers
                             Naam = reader["Naam"].ToString(),
                             Prijs = Decimal.Parse(reader["prijs"].ToString()),
                             Plaats = reader["Plaats"].ToString(),
-                            Beschrijving = reader["Beschrijving"].ToString()
+                            Beschrijving = reader["Beschrijving"].ToString(),
+                            Img = reader["Img"].ToString()
                         };
                         festivals.Add(festival);
                     }
