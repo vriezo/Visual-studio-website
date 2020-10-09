@@ -80,7 +80,7 @@ namespace SchoolTemplate.Controllers
                             Prijs = Decimal.Parse(reader["prijs"].ToString()),
                             Plaats = reader["Plaats"].ToString(),
                             Beschrijving = reader["Beschrijving"].ToString(),
-                            Img = reader["Img"].ToString()
+                            ImgLogo = reader["Img-logo"].ToString()
                             
                         };
                         festivals.Add(festival);
@@ -108,7 +108,7 @@ namespace SchoolTemplate.Controllers
                             Prijs = Decimal.Parse(reader["prijs"].ToString()),
                             Plaats = reader["Plaats"].ToString(),
                             Beschrijving = reader["Beschrijving"].ToString(),
-                            Img = reader["Img"].ToString()
+                            ImgLogo = reader["Img-logo"].ToString()
                         };
                         festivals.Add(festival);
                     }

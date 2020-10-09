@@ -17,7 +17,7 @@ namespace SchoolTemplate.Database
 
     public string Beschrijving { get; set; } 
 
-    public string Img { get; set; }
+    public string ImgLogo { get; set; }
 
   }
 }
