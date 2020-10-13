@@ -8,17 +8,19 @@
 
     <div class="festivals">
         <h2>Geplande festivals</h2>
-        @foreach (Festival festival in Model)
-        {
-            <a class="festival" href="/festivals/@festival.Id">
-                <h5 class="festival-titel">@festival.Naam</h5>
-                <h6 class="festival-titel">@festival.Plaats</h6>
-                
+        
+            @foreach (Festival festival in Model)
+            {
+                <a class="festival" href="/festivals/@festival.Id">
+                    <h5 class="festival-titel">@festival.Naam</h5>
+                    <h6 class="festival-titel">@festival.Plaats</h6>
 
-               
 
-                <img src="@festival.ImgLogo" />
 
-            </a>
-        }
+
+                    <img src="@festival.ImgLogo" />
+
+                </a>
+            }
+        
     </div>
