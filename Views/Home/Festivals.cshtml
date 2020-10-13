@@ -3,21 +3,19 @@
     ViewData["Title"] = "Home Page";
 
 }
+    <div class="tekstfestivals">
 
-<br />
-<table>
-    <tr>
-        <h3>Naam</h3>
+        <h2>@Model.Naam</h2>
 
-        <th>Plaats</th>
-        <th>Beschrijving</th>
-        <th>Prijs</th>
-    </tr>
-    <tr>
-        <td>@Model.Naam</td>
-        <td>@Model.Plaats</td>
-        <td>@Model.Beschrijving</td>
-        <td>@Model.Prijs</td>
-           <td> <img src="/@Model.ImgDatabase" /></td>
-    </tr>
-</table>
+        <img class="textrap" src="/@Model.ImgDatabase" />
+        <p>@Model.Beschrijving</p>
+        
+
+        <h3>Locatie</h3>
+        <a>@Model.Plaats</a>
+        <h3>Prijs:</h3>
+        <a>@Model.Prijs</a>
+
+
+
+    </div>
