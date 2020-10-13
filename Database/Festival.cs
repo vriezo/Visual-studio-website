@@ -19,5 +19,7 @@ namespace SchoolTemplate.Database
 
     public string ImgLogo { get; set; }
 
+    public string ImgDatabase { get; set; }
+
   }
 }
