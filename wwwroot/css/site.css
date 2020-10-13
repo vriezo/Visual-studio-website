@@ -35,6 +35,7 @@ html {
     overflow: hidden;
     background-color: oldlace; 
     border-radius: 15px;
+    text-align: center;
 }
 .festivals .festival {
     border: 1px solid #e5e5e5;
@@ -48,6 +49,7 @@ html {
     text-decoration: inherit;
     border-radius: 15px;
     background-color: white;
+
 }
 
     .festivals .festival img{
@@ -79,13 +81,14 @@ body {
 
 }
 .footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
+    height: 100px;
     width: 100%;
-    background-color: red;
-    color: white;
     text-align: center;
+    background-color: red;
+    overflow: hidden;
 }
 
 .nav-bar {
