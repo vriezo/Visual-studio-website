@@ -128,6 +128,7 @@ li a:hover {
 
 .tekstfestivals {
     text-align: left;
+    margin-left: 10px;
   
 
 }
@@ -136,4 +137,9 @@ li a:hover {
     float: right;
     margin: 10px;
     
+}
+
+#map {
+    height: 400px;
+    width: 100%;
 }
