@@ -89,6 +89,7 @@ body {
     text-align: center;
     background-color: red;
     overflow: hidden;
+    text-align: left;
 }
 
 .nav-bar {
