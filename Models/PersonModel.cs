@@ -12,7 +12,6 @@ namespace SchoolTemplate.Models
         public string Achternaam { get; set; }
 
         [Required(ErrorMessage = "E-mail is verplicht")]
-        [EmailAddress(ErrorMessage = "Geen geldig e-mail adres")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Geboortedatum is verplicht")]

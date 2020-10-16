@@ -43,8 +43,8 @@ html {
     display: inline-block;
     padding-right: 40px;
     padding-left: 40px;
-    margin-left: 23px;
-    margin-top: 23px;
+    margin-left: 26px;
+    margin-top: 26px;
     color: inherit;
     text-decoration: inherit;
     border-radius: 15px;
@@ -53,8 +53,8 @@ html {
 }
 
     .festivals .festival img{
-        width:  390px;
-        height: 390px;
+        width:  300px;
+        height: 300px;
     }
 
     .festival .festival-titel {
@@ -129,7 +129,6 @@ li a:hover {
 
 .tekstfestivals {
     text-align: left;
-    margin-left: 10px;
   
 
 }
@@ -140,7 +139,6 @@ li a:hover {
     
 }
 
-#map {
-    height: 400px;
-    width: 100%;
+.contact {
+    background-color: red; 
 }
