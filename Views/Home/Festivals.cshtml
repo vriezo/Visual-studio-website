@@ -1,4 +1,5 @@
 ﻿@using SchoolTemplate.Database;
+@model Festival
 @{
     ViewData["Title"] = "Home Page";
 
@@ -10,9 +11,9 @@
         <img class="textrap" src="/@Model.ImgDatabase" />
         <p>@Model.Beschrijving</p>
 
-        
-        <a><b>Prijs: €</b> @Model.Prijs</a>
 
+        <p><b>Prijs: €</b> @Model.Prijs</p>
+        <p><b>Start: </b> @Model.Date.ToString("D")</p>
 
 
     </div>

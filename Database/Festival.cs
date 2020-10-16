@@ -21,5 +21,7 @@ namespace SchoolTemplate.Database
 
     public string ImgDatabase { get; set; }
 
+    public DateTime Date { get; set; }
+
   }
 }

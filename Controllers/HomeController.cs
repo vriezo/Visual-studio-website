@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO.Pipelines;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using SchoolTemplate.Database;
@@ -81,8 +82,8 @@ namespace SchoolTemplate.Controllers
                             Plaats = reader["Plaats"].ToString(),
                             Beschrijving = reader["Beschrijving"].ToString(),
                             ImgLogo = reader["img-logo"].ToString(),
-                            ImgDatabase = reader["Img-database"].ToString()
-                            
+                            ImgDatabase = reader["Img-database"].ToString(), 
+                            Date = DateTime.Parse(reader["datumtijd"].ToString())
                         };
                         festivals.Add(festival);
                     }
