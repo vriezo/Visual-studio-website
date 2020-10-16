@@ -127,7 +127,8 @@ li a:hover {
 }
 
 .textrap {
-    width: 1000px
+    float: right;
+    margin: 10px;
     
 }
 
