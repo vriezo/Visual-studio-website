@@ -12,7 +12,7 @@ namespace SchoolTemplate.Models
         public string Achternaam { get; set; }
 
         [Required(ErrorMessage = "E-mail is verplicht")]
-        public string Email { get; set; }
+        public string Emailadres { get; set; }
 
         [Required(ErrorMessage = "Geboortedatum is verplicht")]
         public DateTime Geboortedatum { get; set; }
