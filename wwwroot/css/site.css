@@ -11,8 +11,8 @@ a.navbar-brand {
 -------------------------------------------------- */
 html {
   font-size: 14px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 0;
+  margin: 0;
   
 }
 @media (min-width: 768px) {
@@ -36,6 +36,7 @@ html {
     background-color: oldlace; 
     border-radius: 15px;
     text-align: center;
+    padding-bottom: 50px; 
 }
 .festivals .festival {
     border: 1px solid #e5e5e5;
@@ -43,8 +44,8 @@ html {
     display: inline-block;
     padding-right: 40px;
     padding-left: 40px;
-    margin-left: 26px;
-    margin-top: 26px;
+    margin-left: 34px;
+    margin-top: 34px;
     color: inherit;
     text-decoration: inherit;
     border-radius: 15px;
@@ -53,8 +54,8 @@ html {
 }
 
     .festivals .festival img{
-        width:  300px;
-        height: 300px;
+        width:  280px;
+        height: 280px;
     }
 
     .festival .festival-titel {
@@ -77,6 +78,8 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
     background-color: gainsboro;
+    margin-left: 180px; 
+    margin-right: 180px;
     
 
 }
@@ -85,7 +88,7 @@ body {
     left: 0;
     bottom: 0;
     height: 100px;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     background-color: red;
     overflow: hidden;
@@ -129,8 +132,9 @@ li a:hover {
 
 .tekstfestivals {
     text-align: left;
+    padding-left: 15px; 
+    padding-right: 10px;
   
-
 }
 
 .textrap {
