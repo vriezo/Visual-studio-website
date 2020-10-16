@@ -138,7 +138,9 @@ li a:hover {
 }
 
 .textrap {
-    width: 1000px
+    float: right;
+    margin: 10px;
+
     
 }
 
@@ -166,10 +168,11 @@ li a:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
+    font-family: Arial;
 }
 
-/* Style inputs */
-input[type=text], select, textarea {
+
+input[type=text], select  {
     width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -185,7 +188,7 @@ input[type=submit] {
     border: none;
     cursor: pointer;
 }
-input[type=datetime], select, datetimearea {
+input[type=datetime], select  {
     width: 90%;
     padding: 12px;
     border: 1px solid #ccc;

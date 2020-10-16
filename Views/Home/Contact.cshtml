@@ -12,20 +12,21 @@
 }
 
 <form method="post" class="contact">
-    <input type="text" name="voornaam" placeholder="Voornaam" /> <br />
     @Html.ValidationMessageFor(m => m.Voornaam) <br />
-    <input type="text" name="achternaam" placeholder="Achternaam" /> <br />
+    <input type="text" name="voornaam" placeholder="Voornaam" /> <br />
     @Html.ValidationMessageFor(m => m.Achternaam) <br />
-    <input type="datetime" name="geboortedatum" placeholder="Geboortedatum" /> <br />
+    <input type="text" name="achternaam" placeholder="Achternaam" /> <br />
     @Html.ValidationMessageFor(m => m.Geboortedatum) <br />
+    <input type="datetime" name="geboortedatum" placeholder="Geboortedatum" /> <br />
+    @Html.ValidationMessageFor(m => m.Emailadres) <br />
     <input type="text" name="emailadres" placeholder="Emailadres" /> <br />
-    @Html.ValidationMessageFor(m => m.Email) <br />
-    <input type="text" name="adres" placeholder="Adres" /> <br />
     @Html.ValidationMessageFor(m => m.Adres) <br />
-    <input type="text" name="woonplaats" placeholder="Woonplaats" /> <br />
+    <input type="text" name="adres" placeholder="Adres" /> <br />
     @Html.ValidationMessageFor(m => m.Woonplaats) <br />
-    <input type="text" name="postcode" placeholder="Postcode" /> <br />
+    <input type="text" name="woonplaats" placeholder="Woonplaats" /> <br />
     @Html.ValidationMessageFor(m => m.Postcode) <br />
+    <input type="text" name="postcode" placeholder="Postcode" /> <br />
+
     <input type="submit" value="verstuur" />
 </form>
 
